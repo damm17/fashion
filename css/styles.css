@@ -184,7 +184,7 @@ footer .row h4 {
     font-size: 12px;
 }
 
-footer .row p span {
+footer .row p span a {
     display:block;
     color:#b80000;
     font-style: italic;
@@ -258,13 +258,91 @@ footer nav.navigation {
     border-bottom:none;
 }
 
+
+
+
+
 /******* MEDIA QUERIES **********/
 
+/* CENTRAR BARRA DE NAVEGACION */
 @media (min-width: 768px){
     .navbar-nav{
         float:none;
         margin: 0 auto;
         display: table;
         table-layout: fixed;
+    }
+}
+
+/* ESTILOS PARA PANTALLAS MEDIANAS */
+@media (max-width: 991px){
+    div.row.imgRow .colMargin {
+        margin:0;
+    }
+    div.row.imgRow {
+        max-width:650px;
+        margin:0 auto;
+    }
+    div.row.imgRow div.col-sm-6 {
+        padding:15px;
+        margin-right:25px;
+    }
+    footer .contact {
+        float:none;
+        margin-top:20px;
+    }
+}
+
+/* ESTILOS PARA PANTALLA CHICA */
+@media (max-width: 767px) {
+    footer .navigation ul li{
+        float:left;
+    }
+    footer .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+    footer .contact h4 {
+        padding-top:20px;
+        margin-top:40px;
+    }
+    div.row.imgRow {
+        max-width:350px;
+        margin:0 auto;
+    }
+}
+
+@media (max-width:489px) {
+    footer .navigation ul li {
+        padding:0;
+        margin:0 5px 0 0;
+    }
+    footer .contact {
+        max-width:350px;
+    }
+    footer .contact p.divider {
+        display: none;
+    }
+    footer .contact .email {
+        border-top:1px solid #eaeaea;
+        padding-top:10px;
+    }
+    footer .contact .phone{
+        display:inline-block;
+        float:none;
+        width:100%;
+        border-top:1px solid #eaeaea;
+        padding-top:10px;
+    }
+    footer .contact h4 {
+        margin:0 0 20px 0;
+        border-top:1px solid #eaeaea;
+        padding-top:20px;
+    }
+    footer .contact form input {
+        width:100%;
+        margin-bottom:10px;
     }
 }
